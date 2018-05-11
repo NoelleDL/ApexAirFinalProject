@@ -1,5 +1,5 @@
 //
-//  airTests.swift
+//  PollutionLevel.swift
 //  airTests
 //
 //  Created by Miss America on 5/11/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import air
 
-class airTests: XCTestCase {
+class PollutionLevel: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,5 +21,14 @@ class airTests: XCTestCase {
         super.tearDown()
     }
     
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testgetIndexOfConcen() {
+        let result = getIndexOfConcen(findX: 5, findY: 10, rowWidth: 20)
+        XCTAssertEqual(result, 205)
+    }
     
 }

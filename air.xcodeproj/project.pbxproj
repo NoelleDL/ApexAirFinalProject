@@ -16,6 +16,16 @@
 		F3D1A0DD20A57CB600E5440C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D1A0DB20A57CB600E5440C /* LaunchScreen.storyboard */; };
 		F3D1A0E820A57CB700E5440C /* airTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A0E720A57CB700E5440C /* airTests.swift */; };
 		F3D1A0F320A57CB700E5440C /* airUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A0F220A57CB700E5440C /* airUITests.swift */; };
+		F3D1A10120A57D4800E5440C /* concen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10020A57D4800E5440C /* concen.swift */; };
+		F3D1A10320A57D9700E5440C /* coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10220A57D9700E5440C /* coordinates.swift */; };
+		F3D1A10520A57DC500E5440C /* EmojiLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10420A57DC500E5440C /* EmojiLogic.swift */; };
+		F3D1A10720A57E1100E5440C /* GetPollutionLevelFromLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10620A57E1100E5440C /* GetPollutionLevelFromLocation.swift */; };
+		F3D1A10920A57E5100E5440C /* LookUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10820A57E5100E5440C /* LookUp.swift */; };
+		F3D1A10B20A57E8C00E5440C /* PollutionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10A20A57E8C00E5440C /* PollutionLevel.swift */; };
+		F3D1A10F20A57FE400E5440C /* EmojiLogicTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A10E20A57FE400E5440C /* EmojiLogicTest.swift */; };
+		F3D1A11120A5804300E5440C /* GetPollutionLevelFromLocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A11020A5804300E5440C /* GetPollutionLevelFromLocationTest.swift */; };
+		F3D1A11320A5808000E5440C /* LookUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A11220A5808000E5440C /* LookUpTest.swift */; };
+		F3D1A11520A580E500E5440C /* PollutionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1A11420A580E500E5440C /* PollutionLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		F3D1A0EE20A57CB700E5440C /* airUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D1A0F220A57CB700E5440C /* airUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airUITests.swift; sourceTree = "<group>"; };
 		F3D1A0F420A57CB700E5440C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D1A10020A57D4800E5440C /* concen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concen.swift; sourceTree = "<group>"; };
+		F3D1A10220A57D9700E5440C /* coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coordinates.swift; sourceTree = "<group>"; };
+		F3D1A10420A57DC500E5440C /* EmojiLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiLogic.swift; sourceTree = "<group>"; };
+		F3D1A10620A57E1100E5440C /* GetPollutionLevelFromLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPollutionLevelFromLocation.swift; sourceTree = "<group>"; };
+		F3D1A10820A57E5100E5440C /* LookUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUp.swift; sourceTree = "<group>"; };
+		F3D1A10A20A57E8C00E5440C /* PollutionLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionLevel.swift; sourceTree = "<group>"; };
+		F3D1A10E20A57FE400E5440C /* EmojiLogicTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiLogicTest.swift; sourceTree = "<group>"; };
+		F3D1A11020A5804300E5440C /* GetPollutionLevelFromLocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPollutionLevelFromLocationTest.swift; sourceTree = "<group>"; };
+		F3D1A11220A5808000E5440C /* LookUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookUpTest.swift; sourceTree = "<group>"; };
+		F3D1A11420A580E500E5440C /* PollutionLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +129,12 @@
 				F3D1A0D920A57CB600E5440C /* Assets.xcassets */,
 				F3D1A0DB20A57CB600E5440C /* LaunchScreen.storyboard */,
 				F3D1A0DE20A57CB600E5440C /* Info.plist */,
+				F3D1A10020A57D4800E5440C /* concen.swift */,
+				F3D1A10220A57D9700E5440C /* coordinates.swift */,
+				F3D1A10420A57DC500E5440C /* EmojiLogic.swift */,
+				F3D1A10620A57E1100E5440C /* GetPollutionLevelFromLocation.swift */,
+				F3D1A10820A57E5100E5440C /* LookUp.swift */,
+				F3D1A10A20A57E8C00E5440C /* PollutionLevel.swift */,
 			);
 			path = air;
 			sourceTree = "<group>";
@@ -118,6 +144,10 @@
 			children = (
 				F3D1A0E720A57CB700E5440C /* airTests.swift */,
 				F3D1A0E920A57CB700E5440C /* Info.plist */,
+				F3D1A10E20A57FE400E5440C /* EmojiLogicTest.swift */,
+				F3D1A11020A5804300E5440C /* GetPollutionLevelFromLocationTest.swift */,
+				F3D1A11220A5808000E5440C /* LookUpTest.swift */,
+				F3D1A11420A580E500E5440C /* PollutionLevel.swift */,
 			);
 			path = airTests;
 			sourceTree = "<group>";
@@ -264,8 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D1A0D520A57CB500E5440C /* ViewController.swift in Sources */,
+				F3D1A10920A57E5100E5440C /* LookUp.swift in Sources */,
+				F3D1A10120A57D4800E5440C /* concen.swift in Sources */,
 				F3D1A0D320A57CB500E5440C /* Scene.swift in Sources */,
+				F3D1A10B20A57E8C00E5440C /* PollutionLevel.swift in Sources */,
+				F3D1A10320A57D9700E5440C /* coordinates.swift in Sources */,
 				F3D1A0CF20A57CB500E5440C /* AppDelegate.swift in Sources */,
+				F3D1A10520A57DC500E5440C /* EmojiLogic.swift in Sources */,
+				F3D1A10720A57E1100E5440C /* GetPollutionLevelFromLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D1A11120A5804300E5440C /* GetPollutionLevelFromLocationTest.swift in Sources */,
+				F3D1A11320A5808000E5440C /* LookUpTest.swift in Sources */,
 				F3D1A0E820A57CB700E5440C /* airTests.swift in Sources */,
+				F3D1A10F20A57FE400E5440C /* EmojiLogicTest.swift in Sources */,
+				F3D1A11520A580E500E5440C /* PollutionLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6R66A7DRN;
 				INFOPLIST_FILE = air/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6R66A7DRN;
 				INFOPLIST_FILE = air/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

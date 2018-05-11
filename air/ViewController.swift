@@ -9,13 +9,44 @@
 import UIKit
 import SpriteKit
 import ARKit
+import CoreLocation
 
-class ViewController: UIViewController, ARSKViewDelegate {
+class ViewController: UIViewController, ARSKViewDelegate, CLLocationManagerDelegate {
+    
+    var scene: Scene?
+    
+    var emoji = ""
     
     @IBOutlet var sceneView: ARSKView!
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 50))
+        //        imageView.contentMode = .scaleAspectFit
+        //        let image = UIImage(named: "emoji")
+        //        imageView.image = image
+        //        navigationItem.titleView = imageView
+        
+        //        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
+        let customButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 50))
+        customButton.setImage(UIImage.init(named:"emoji"), for: .normal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
+        
+        
+        locationManager.delegate = self
+        
+        locationManager.requestAlwaysAuthorization()
+        
+        locationManager.startUpdatingLocation()
+        
+        locationManager.stopUpdatingHeading()
+        
+        locationManager.distanceFilter = 10
         
         // Set the view's delegate
         sceneView.delegate = self
@@ -25,17 +56,29 @@ class ViewController: UIViewController, ARSKViewDelegate {
         sceneView.showsNodeCount = true
         
         // Load the SKScene from 'Scene.sks'
-        if let scene = SKScene(fileNamed: "Scene") {
-            sceneView.presentScene(scene)
+        scene = SKScene(fileNamed: "Scene") as? Scene
+        sceneView.presentScene(scene)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        for currentLocation in locations{
+            let pollutionLevel = getConcen(lon: currentLocation.coordinate.longitude, lat: currentLocation.coordinate.latitude)
+            let result = getEmoji(value: pollutionLevel)
+            emoji = result
+            scene!.showEmoji()
+            print("\(pollutionLevel)","\(result)","\(currentLocation.coordinate)")
+            
         }
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -56,7 +99,11 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
+        print("before showing", "\(emoji)")
+        let labelNode = SKLabelNode(fontNamed: "Noteworthy-Bold")
+        labelNode.text = emoji
+        labelNode.fontSize = 20
+        labelNode.fontColor = SKColor.yellow
         labelNode.horizontalAlignmentMode = .center
         labelNode.verticalAlignmentMode = .center
         return labelNode;

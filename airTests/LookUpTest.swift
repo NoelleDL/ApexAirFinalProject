@@ -1,5 +1,5 @@
 //
-//  airTests.swift
+//  LookUpTest.swift
 //  airTests
 //
 //  Created by Miss America on 5/11/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import air
 
-class airTests: XCTestCase {
+class LookUpTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,5 +21,19 @@ class airTests: XCTestCase {
         super.tearDown()
     }
     
+    func testGetIndex() {
+        let result = getIndex(find: 12.7 , arr: [11,12,13])
+        XCTAssertEqual(result, 2)
+    }
+    
+    func testGetIndexZero() {
+        let result = getIndex(find: 10 , arr: [11,12,13])
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testGetLength() {
+        let result = getIndex(find: 14 , arr: [11,12,13])
+        XCTAssertEqual(result, 2)
+    }
     
 }
